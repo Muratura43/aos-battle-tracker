@@ -14,6 +14,11 @@ async function start() {
   app.get("/battles", async (req, res, next) => {
     const items = await repository.readAll();
 
+    if (items == null) {
+      res.status(404).json("Nothing...");
+      return;
+    }
+
     for (let i of items) {
       console.log(i._id + " " + i.a);
     }

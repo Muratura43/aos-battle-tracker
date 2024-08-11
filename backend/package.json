@@ -2,7 +2,7 @@
   "dependencies": {
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
-    "mongodb": "^6.7.0"
+    "mongodb": "^6.8.0"
   },
   "devDependencies": {
     "@babel/core": "^7.24.9",
@@ -19,7 +19,8 @@
     "build:dev": "webpack --mode=development",
     "build:prod": "webpack --mode=production --node-env=production",
     "watch": "webpack --watch",
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "main": "node dist/main.js"
   },
   "version": "1.0.0",
   "description": "AoS Battle Tracker",
